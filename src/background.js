@@ -1,11 +1,20 @@
 'use strict'
 
-import { app, protocol, BrowserWindow,ipcMain } from 'electron'
-import {
-  createProtocol,
-  /* installVueDevtools */
-} from 'vue-cli-plugin-electron-builder/lib'
-import { captureRejectionSymbol } from 'events'
+const { app, protocol, BrowserWindow,ipcMain } = require('electron')
+const { createProtocol } = require('vue-cli-plugin-electron-builder/lib')
+const { captureRejectionSymbol } = require('events')
+
+
+
+
+
+
+// import { app, protocol, BrowserWindow,ipcMain } from 'electron'
+// import {
+//   createProtocol,
+//   /* installVueDevtools */
+// } from 'vue-cli-plugin-electron-builder/lib'
+// import { captureRejectionSymbol } from 'events'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 var path = require('path');
 var model = require('../src/db/model.js');
